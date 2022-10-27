@@ -1,0 +1,6 @@
+D:\tymg\tymg\AsciiConverter\bin\Debug\AsciiConverter.dll
+D:\tymg\tymg\AsciiConverter\bin\Debug\AsciiConverter.pdb
+D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.csproj.CoreCompileInputs.cache
+D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.dll
+D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.pdb
+D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.csproj.AssemblyReference.cache

@@ -1,0 +1,13 @@
+D:\tymg\tymg\tymg\bin\Debug\tymg.exe.config
+D:\tymg\tymg\tymg\bin\Debug\tymg.exe
+D:\tymg\tymg\tymg\bin\Debug\tymg.pdb
+D:\tymg\tymg\tymg\obj\Debug\tymg.csproj.AssemblyReference.cache
+D:\tymg\tymg\tymg\obj\Debug\tymg.Form1.resources
+D:\tymg\tymg\tymg\obj\Debug\tymg.Properties.Resources.resources
+D:\tymg\tymg\tymg\obj\Debug\tymg.csproj.GenerateResource.cache
+D:\tymg\tymg\tymg\obj\Debug\tymg.csproj.CoreCompileInputs.cache
+D:\tymg\tymg\tymg\obj\Debug\tymg.exe
+D:\tymg\tymg\tymg\obj\Debug\tymg.pdb
+D:\tymg\tymg\tymg\bin\Debug\AsciiConverter.dll
+D:\tymg\tymg\tymg\bin\Debug\AsciiConverter.pdb
+D:\tymg\tymg\tymg\obj\Debug\tymg.csproj.CopyComplete
