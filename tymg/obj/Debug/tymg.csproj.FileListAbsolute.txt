@@ -11,3 +11,16 @@ D:\tymg\tymg\tymg\obj\Debug\tymg.pdb
 D:\tymg\tymg\tymg\bin\Debug\AsciiConverter.dll
 D:\tymg\tymg\tymg\bin\Debug\AsciiConverter.pdb
 D:\tymg\tymg\tymg\obj\Debug\tymg.csproj.CopyComplete
+E:\tymg\tymg\bin\Debug\tymg.exe.config
+E:\tymg\tymg\bin\Debug\tymg.exe
+E:\tymg\tymg\bin\Debug\tymg.pdb
+E:\tymg\tymg\bin\Debug\AsciiConverter.dll
+E:\tymg\tymg\bin\Debug\AsciiConverter.pdb
+E:\tymg\tymg\obj\Debug\tymg.csproj.AssemblyReference.cache
+E:\tymg\tymg\obj\Debug\tymg.Form1.resources
+E:\tymg\tymg\obj\Debug\tymg.Properties.Resources.resources
+E:\tymg\tymg\obj\Debug\tymg.csproj.GenerateResource.cache
+E:\tymg\tymg\obj\Debug\tymg.csproj.CoreCompileInputs.cache
+E:\tymg\tymg\obj\Debug\tymg.csproj.CopyComplete
+E:\tymg\tymg\obj\Debug\tymg.exe
+E:\tymg\tymg\obj\Debug\tymg.pdb

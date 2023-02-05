@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,12 @@ namespace tymg
             InitializeComponent();
         }
 
-
+        //if it's int returns true true
+        private bool isNumber(string input)
+        {
+            return Regex.IsMatch(input, @"^\d+$");
+        }
+        
 
         private void btn_load_Click(object sender, EventArgs e)
         {
@@ -36,20 +42,82 @@ namespace tymg
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 txtbox_ruta.Text = ofd.FileName;
+                Bitmap img = new Bitmap(txtbox_ruta.Text);
+                pictureBox1.Image = img;
             }
+
+            
 
         }
 
         private void btn_img2text_Click(object sender, EventArgs e)
         {
             AsciiConv ac = new AsciiConv();
-            ac.darkness = Int32.Parse(txt_dark.Text);
+            if (isNumber(txt_dark.Text) || ascii_chkbox.Checked) { 
 
-            Bitmap img = new Bitmap(txtbox_ruta.Text);
 
-            pictureBox1.Image = img;
+                try {
+                   
 
-            txtbox_output.Text = ac.getText(txtbox_ruta.Text);
+                    if (isNumber(txtbox_iheight.Text) && isNumber(txtbox_iwidth.Text))
+                    {
+                        ac.img_x = Int32.Parse(txtbox_iwidth.Text);
+                        ac.img_y = Int32.Parse(txtbox_iheight.Text);
+
+                        if (ac.img_x > 0 && ac.img_y > 0 && ac.img_x <= 500 && ac.img_y <= 500)
+                        {
+                            if (!ascii_chkbox.Checked)
+                            {
+                                ac.darkness = Int32.Parse(txt_dark.Text);
+                                txtbox_output.Text = ac.getTextBraille(txtbox_ruta.Text);
+
+                            }
+                            else
+                            {
+                                txtbox_output.Text = ac.getTextAscii(txtbox_ruta.Text);
+                            }
+                        } else
+                        {
+                            MessageBox.Show("Error: select more than 0 and less than 501 dimensions");
+                        }
+
+                       
+                    } else
+                    { 
+                        MessageBox.Show("Error: select valid width and height dimensions");
+                    }
+
+                }
+                catch (System.ArgumentException)
+                {
+                    MessageBox.Show("Error: select a valid image route");
+                }
+                
+               
+            } else {
+                MessageBox.Show("Error: select a valid level of darkness");
+            }
+        }
+
+        private void button_ctcb_Click(object sender, EventArgs e)
+        {
+            if (txtbox_output.Text != String.Empty) {
+                System.Windows.Forms.Clipboard.SetText(txtbox_output.Text);
+
+                timer_copied.Enabled = true;
+                label_cptcb.Text = "Output copied to clipboard...";
+            } else {
+                MessageBox.Show("Error: There is no output");
+            }
+            
+        }
+
+        private void timer_copied_Tick(object sender, EventArgs e)
+        {
+            label_cptcb.Text = " ";{
+            
+            }
+            timer_copied.Enabled = false;
         }
     }
 }

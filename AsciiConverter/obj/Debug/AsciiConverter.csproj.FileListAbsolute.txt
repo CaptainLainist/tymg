@@ -4,3 +4,9 @@ D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.csproj.CoreCompileInputs.ca
 D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.dll
 D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.pdb
 D:\tymg\tymg\AsciiConverter\obj\Debug\AsciiConverter.csproj.AssemblyReference.cache
+E:\tymg\AsciiConverter\bin\Debug\AsciiConverter.dll
+E:\tymg\AsciiConverter\bin\Debug\AsciiConverter.pdb
+E:\tymg\AsciiConverter\obj\Debug\AsciiConverter.csproj.AssemblyReference.cache
+E:\tymg\AsciiConverter\obj\Debug\AsciiConverter.csproj.CoreCompileInputs.cache
+E:\tymg\AsciiConverter\obj\Debug\AsciiConverter.dll
+E:\tymg\AsciiConverter\obj\Debug\AsciiConverter.pdb
